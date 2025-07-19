@@ -1,0 +1,27 @@
+{
+  "name": "mcp-browser-screenshot",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "mcp-browser-screenshot": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js",
+    "dev": "npm run build && npm run start"
+  },
+  "keywords": ["mcp", "browser", "screenshot", "puppeteer", "automation"],
+  "author": "",
+  "license": "MIT",
+  "description": "MCP server for browser automation and screenshot capture",
+  "devDependencies": {
+    "@types/node": "^24.0.13",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.1",
+    "puppeteer": "^24.12.1"
+  }
+}
